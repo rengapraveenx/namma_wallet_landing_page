@@ -22,10 +22,15 @@
                     <span class="logo-icon">👜</span>
                     <span class="logo-text">Namma Wallet</span>
                 </div>
-                <a href="https://play.google.com/store/apps/details?id=com.nammaflutter.nammawallet"
-                    class="download-btn" target="_blank">
-                    Download App
-                </a>
+                <div class="nav-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.nammaflutter.nammawallet"
+                        class="download-btn play-store" target="_blank">
+                        Play Store
+                    </a>
+                    <a href="#" class="download-btn app-store disabled">
+                        App Store
+                    </a>
+                </div>
             </nav>
 
             <!-- Hero Section -->
@@ -80,10 +85,19 @@
 
             <!-- Contributors Section -->
             <section class="contributors-section" id="contributors">
-                <h2>Built by the Community</h2>
-                <p>Meet the amazing people behind Namma Wallet</p>
-                <div class="contributors-grid" id="contributors-grid">
-                    <!-- Contributors will be injected here via JS -->
+                <!-- New 'Layered' Structure based on user request -->
+                <div class="contributors-content">
+                    <h2 class="section-title text-center mb-12">Meet Our Contributors</h2>
+                    <div class="contributors-grid" id="contributors-grid-container">
+                        <div class="layer" id="layer-1"></div>
+                        <div class="layer" id="layer-2"></div>
+                        <div class="layer" id="layer-3"></div>
+                        <div class="scaler">
+                            <div class="logo-container">
+                                <span class="logo-icon-large">👜</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -98,6 +112,7 @@
                         <a href="https://github.com/Namma-Flutter/namma_wallet" target="_blank">GitHub</a>
                         <a href="https://play.google.com/store/apps/details?id=com.nammaflutter.nammawallet"
                             target="_blank">Play Store</a>
+                        <a href="#" class="disabled">App Store</a>
                     </div>
                 </div>
                 <div class="footer-bottom">
